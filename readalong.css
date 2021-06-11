@@ -1,0 +1,67 @@
+
+.h5p-readalong .cover-image {
+  max-height: 400px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px grey;
+}
+
+.h5p-readalong .clickable {
+  padding: 0;
+  white-space: normal;
+  border-radius: 0.25em;
+  cursor: pointer;
+  position: relative;
+}
+
+.h5p-readalong .clickable:hover {
+  box-shadow: inset 0px 0px 0px 2px #cee0f4;
+}
+
+.h5p-readalong .clickable[aria-selected="true"] {
+  border-radius: 0.25em;
+  background: #cee0f4;
+  color: #000;
+}
+
+.h5p-audio-minimal-button {
+  margin: 0 auto;
+  font-family: 'H5PFontAwesome4';
+  display: block;
+  padding: 0.3em;
+  width: 15px;
+  font-size: 1em;
+  border: 0.1em solid #fff;
+  border-radius: 50%;
+  line-height: 1;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  height: 15px;
+  background: rgb(100, 152, 254);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(100, 152, 254, 1) 0%, rgba(4, 104, 206, 1) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(100, 152, 254, 1)), color-stop(100%, rgba(4, 104, 206, 1)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(100, 152, 254, 1) 0%, rgba(4, 104, 206, 1) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(100, 152, 254, 1) 0%, rgba(4, 104, 206, 1) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(100, 152, 254, 1) 0%, rgba(4, 104, 206, 1) 100%);
+  /* IE10+ */
+}
+
+.h5p-audio-minimal-button:hover {
+  cursor: pointer;
+}
+
+.h5p-audio-minimal-button:before {
+  content: "\f028";
+}
+.h5p-audio-minimal-button.playing:before {
+  content: "\f021";
+}
+

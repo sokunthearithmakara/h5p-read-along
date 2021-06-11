@@ -1,0 +1,28 @@
+{
+  "title": "Read Along",
+  "description": "Add audio to line of text",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 1,
+  "author": "Sokunthearith Makara",
+  "license": "cc-by-sa",
+  "machineName": "H5P.ReadAlong",
+  "preloadedJs": [
+    {
+      "path": "readalong.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "readalong.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    }
+  ]
+}

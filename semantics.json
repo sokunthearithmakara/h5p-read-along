@@ -1,0 +1,43 @@
+[
+  {
+    "label": "Text",
+    "name": "text",
+    "type": "text",
+    "widget": "html",
+    "default": "*{0:5}Hello world!*",
+    "description": "The reading text you want to display.",
+    "important": {
+      "description": "<ul><li>Clickable chunk of text must be in between asterisks (*).</li><li>Add timestamps after the asterisks to indicate the start time and end time of the audio for the chunk of text in this format {startTimeInSecond:endTimeInSecond}.</li><li>Clickable chunk of text without timestamp markers will play the whole audio from start to finish.</li></ul>",
+      "example": "*{0:5}Once upon a time, there lived a man and his pet fish.*<br>In this example, when the sentence is clicked, the audio will play from the beginning and stop at the 5th second."
+    },
+    "font": {
+      "size": true,
+      "family": true,
+      "color": true,
+      "background": true
+    }
+  },
+  {
+    "name": "audioFiles",
+    "type": "audio",
+    "optional": false,
+    "label": "Audio file",
+    "importance": "high",
+    "description": "Upload only one audio file"
+  },
+  {
+    "name": "enablePlay",
+    "type": "boolean",
+    "label": "Show play button",
+    "description": "Add a play button to read the whole text automatically.",
+    "importance": "low",
+    "default": true
+  },
+  {
+    "label": "Cover image",
+    "name": "image",
+    "type": "image",
+    "optional": true,
+    "description": "Cover image to be displayed on top of the text. Without this, only text will be displayed."
+  }
+]
